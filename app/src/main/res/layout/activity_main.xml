@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/background_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/samantha"/>
+
+        <ImageView
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/sec_user_name"
+            android:layout_marginStart="50dp"
+            android:visibility="gone"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/new_razo_logo"/>
+        <RelativeLayout
+            android:id="@+id/sec_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/bg_user_name"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/background_image">
+
+            <EditText
+                android:id="@+id/txt_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:background="#00000000"
+                android:hint="User Name"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sec_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/bg_user_name"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/sec_user_name">
+
+            <EditText
+                android:id="@+id/txt_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#00000000"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:hint="Password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_below="@+id/sec_password"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/bg_user_name"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"/>
+
+        <TextView
+            android:id="@+id/create_new_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="#54276d"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:text="Create New Account"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
